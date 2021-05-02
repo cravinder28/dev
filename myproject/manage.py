@@ -13,13 +13,8 @@ def main():
     os.environ.setsdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
     try:
         from django.core.management import execute_from_command_line
-<<<<<<< HEAD
-    except RuntimeError as err:
-        print(err)
-=======
     except RuntimeError as e:
 	print(e)
->>>>>>> 2afd9a819389351c3c7415d1f0feebff23d38399
     except ImportError as exc:
         raise ImportError(
             "Couldnot import Django. Are you sure it's installed and "
